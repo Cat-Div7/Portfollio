@@ -70,7 +70,9 @@ export default function Navbar() {
                 {isActive && (
                   <motion.div
                     layoutId="navbar-underline"
-                    className="bg-primary absolute right-2 bottom-0 left-2 h-0.5 rounded-full"
+                    className={`bg-primary absolute right-2 left-2 h-0.5 rounded-full transition-all duration-300 ${
+                      scrolled ? "-bottom-3.5" : "bottom-0"
+                    }`}
                     transition={{ type: "spring", stiffness: 350, damping: 30 }}
                   />
                 )}
