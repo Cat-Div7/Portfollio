@@ -8,6 +8,11 @@ export const navItems: NavLink[] = [
   { label: "Contact", href: "#contact" },
 ];
 
+export const typewriterWords: string[] = [
+  "Frontend Developer",
+  "Building for the web",
+];
+
 export const projects: Project[] = [
   {
     id: 1,
@@ -15,7 +20,6 @@ export const projects: Project[] = [
     description: "Short description here",
     techStack: ["React", "TypeScript", "Tailwind"],
     githubUrl: "https://github.com/Cat-Div7",
-    
   },
 ];
 
