@@ -59,7 +59,7 @@ export default function Navbar() {
               <button
                 key={link.href}
                 onClick={() => handleClick(link.href)}
-                className="relative px-4 py-2 text-sm font-medium transition-colors"
+                className="relative cursor-pointer px-4 py-2 text-sm font-medium transition-colors"
                 style={{
                   color: isActive
                     ? "hsl(var(--primary))"
@@ -83,7 +83,7 @@ export default function Navbar() {
             onClick={toggleTheme}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="border-border text-muted-foreground hover:text-primary hover:border-primary/40 ml-2 rounded-lg border p-2 transition-colors"
+            className="border-border text-foreground hover:text-primary hover:border-primary/40 ml-2 cursor-pointer! rounded-lg border p-2 transition-colors"
             aria-label="Toggle theme"
           >
             <AnimatePresence mode="wait" initial={false}>
@@ -106,14 +106,14 @@ export default function Navbar() {
           <motion.button
             onClick={toggleTheme}
             whileTap={{ scale: 0.9 }}
-            className="border-border text-muted-foreground hover:text-primary rounded-lg border p-2 transition-colors"
+            className="border-border text-foreground hover:text-primary cursor-pointer rounded-lg border p-2 transition-colors"
             aria-label="Toggle theme"
           >
             {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
           </motion.button>
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="text-foreground"
+            className="text-foreground cursor-pointer"
             aria-label="Toggle menu"
           >
             {mobileOpen ? <X size={22} /> : <Menu size={22} />}
@@ -135,7 +135,7 @@ export default function Navbar() {
                 <button
                   key={link.href}
                   onClick={() => handleClick(link.href)}
-                  className="text-muted-foreground hover:text-primary py-2 text-left text-sm font-medium transition-colors"
+                  className="text-muted-foreground hover:text-primary cursor-pointer py-2 text-left text-sm font-medium transition-colors"
                 >
                   {link.label}
                 </button>
