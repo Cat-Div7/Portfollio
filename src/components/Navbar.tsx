@@ -71,7 +71,7 @@ export default function Navbar() {
                   <motion.div
                     layoutId="navbar-underline"
                     className={`bg-primary absolute right-2 left-2 h-0.5 rounded-full transition-all duration-300 ${
-                      scrolled ? "-bottom-3.5" : "bottom-0"
+                      scrolled ? "-bottom-3" : "bottom-0"
                     }`}
                     transition={{ type: "spring", stiffness: 350, damping: 30 }}
                   />
@@ -80,12 +80,12 @@ export default function Navbar() {
             );
           })}
 
-          {/* Theme toggle */}
+          {/* Desktop Theme toggle */}
           <motion.button
             onClick={toggleTheme}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="border-border text-foreground hover:text-primary hover:border-primary/40 ml-2 cursor-pointer! rounded-lg border p-2 transition-colors"
+            className="border-border text-muted-foreground hover:text-primary hover:border-primary/40 ml-2 cursor-pointer! rounded-lg border p-2 transition-colors"
             aria-label="Toggle theme"
           >
             <AnimatePresence mode="wait" initial={false}>
@@ -104,11 +104,12 @@ export default function Navbar() {
         </div>
 
         {/* Mobile controls */}
+        {/* Mobile Theme Toggle */}
         <div className="flex items-center gap-2 md:hidden">
           <motion.button
             onClick={toggleTheme}
             whileTap={{ scale: 0.9 }}
-            className="border-border text-foreground hover:text-primary cursor-pointer rounded-lg border p-2 transition-colors"
+            className="border-border text-muted-foreground hover:text-primary cursor-pointer rounded-lg border p-2 transition-colors"
             aria-label="Toggle theme"
           >
             {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
