@@ -51,7 +51,7 @@ export const skillCategories: SkillCategory[] = [
     title: "Learning",
     skills: [
       { name: "Node.js", icon: "Server" },
-      { name: "Jest", icon: "Container" },
+      { name: "Jest", icon: "FlaskConical" },
       { name: "REST APIs", icon: "Webhook" },
     ],
   },
