@@ -1,4 +1,4 @@
-import type { Project, NavLink, SkillCategory } from "../types/index";
+import type { Project, NavLink, SkillCategory, Stat } from "../types/index";
 
 export const navItems: NavLink[] = [
   { label: "Home", href: "#home" },
@@ -15,14 +15,10 @@ export const typewriterWords: string[] = [
   "Open Source Enthusiast",
 ];
 
-export const projects: Project[] = [
-  {
-    id: 1,
-    title: "Project One",
-    description: "Short description here",
-    techStack: ["React", "TypeScript", "Tailwind"],
-    githubUrl: "https://github.com/Cat-Div7",
-  },
+export const stats: Stat[] = [
+  { label: "Projects Built", value: "5", suffix: "+" },
+  { label: "Years Learning", value: "2", suffix: "+" },
+  { label: "Coffee", value: "∞", suffix: "" },
 ];
 
 export const skillCategories: SkillCategory[] = [
@@ -57,4 +53,44 @@ export const skillCategories: SkillCategory[] = [
       { name: "REST APIs", icon: "Webhook" },
     ],
   },
+];
+
+export const projects: Project[] = [
+  {
+    id: 1,
+    title: "muscle-config",
+    description: "CLI tool that scaffolds React projects with configurable styling and architecture options.",
+    techStack: ["TypeScript", "Node.js", "CLI"],
+    githubUrl: "https://github.com/Cat-Div7/muscle-config",
+  },
+  {
+    id: 2,
+    title: "Portfolio",
+    description: "This site — built from scratch with React, TypeScript and Framer Motion.",
+    techStack: ["React", "TypeScript", "Framer Motion", "Tailwind"],
+    githubUrl: "https://github.com/Cat-Div7",
+    liveUrl: "#",
+  },
+];
+
+export const socialLinks = {
+  github: "https://github.com/Cat-Div7",
+  linkedin: "https://www.linkedin.com/in/omar-ashraf-132193356",
+  email: "omarashraf11234@gmail.com",
+};
+
+export const terminalLines: string[] = [
+  "$ cat about.txt",
+  "",
+  "Name: Omar",
+  "Role: Frontend Developer → Full-Stack",
+  "Location: Remote 🌍",
+  "",
+  "I build clean, accessible, and performant",
+  "web applications with modern tools.",
+  "",
+  "Currently deepening my backend skills",
+  "with Node.js, PostgreSQL, and APIs.",
+  "",
+  "$ _",
 ];
