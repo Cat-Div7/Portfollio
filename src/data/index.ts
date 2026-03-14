@@ -11,6 +11,8 @@ export const navItems: NavLink[] = [
 export const typewriterWords: string[] = [
   "Frontend Developer",
   "Building for the web",
+  "CLI Tool Builder",
+  "Open Source Enthusiast",
 ];
 
 export const projects: Project[] = [
