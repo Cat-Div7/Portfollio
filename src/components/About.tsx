@@ -98,8 +98,15 @@ export default function About() {
             <p className="text-foreground/80 leading-relaxed">
               I love building CLI tools that solve real developer problems —
               currently working on{" "}
-              <span className="text-primary font-medium">muscle-config</span>, a
-              scaffolding tool for React projects. When I'm not coding, I'm
+              <a
+                href="https://github.com/Cat-Div7/muscle-config"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary font-medium"
+              >
+                muscle-config
+              </a>
+              , a scaffolding tool for React projects. When I'm not coding, I'm
               exploring open source, obsessing over developer experience, or
               fueling up on coffee.
             </p>

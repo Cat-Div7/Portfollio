@@ -17,7 +17,7 @@ export const typewriterWords: string[] = [
 
 export const stats: Stat[] = [
   { label: "Projects Built", value: "5", suffix: "+" },
-  { label: "Years Learning", value: "2", suffix: "+" },
+  { label: "Years Learning", value: "1", suffix: "+" },
   { label: "Coffee", value: "∞", suffix: "" },
 ];
 
@@ -95,7 +95,7 @@ export const terminalLines: string[] = [
   "",
   "Name: Omar",
   "Role: Frontend Developer → Full-Stack",
-  "Location: Remote 🌍",
+  "Location: Egypt 🌍 — Remote / On-site",
   "",
   "I build clean, accessible, and performant",
   "web applications with modern tools.",
