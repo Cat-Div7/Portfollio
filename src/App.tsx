@@ -1,3 +1,4 @@
+import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import ScrollProgress from "./components/ScrollProgress";
 
@@ -6,7 +7,9 @@ function App() {
     <>
       <Navbar />
       <ScrollProgress />
-      <main>{/* sections go here */}</main>
+      <main>
+        <Hero />
+      </main>
     </>
   );
 }
