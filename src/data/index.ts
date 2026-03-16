@@ -39,6 +39,7 @@ export const skillCategories: SkillCategory[] = [
     skills: [
       { name: "Git", icon: "GitBranch" },
       { name: "VS Code", icon: "Terminal" },
+      { name: "Vim/Neovim", icon: "SquareTerminal" },
       { name: "npm", icon: "Package" },
       { name: "Vite", icon: "Zap" },
       { name: "GitHub", icon: "Github" },
