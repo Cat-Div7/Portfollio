@@ -1,4 +1,5 @@
 import About from "./components/About";
+import CustomCursor from "./components/CustomCursor";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import ScrollProgress from "./components/ScrollProgress";
@@ -8,6 +9,7 @@ import Skills from "./components/Skills";
 function App() {
   return (
     <>
+      <CustomCursor />
       <Navbar />
       <ScrollProgress />
       <main>
