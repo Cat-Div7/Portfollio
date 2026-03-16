@@ -1,3 +1,5 @@
+export type ProjectCategory = "All" | "Frontend" | "CLI" | "Dashboard";
+
 export interface Project {
   id: number;
   title: string;
@@ -6,6 +8,7 @@ export interface Project {
   githubUrl: string;
   liveUrl?: string;
   image?: string;
+  category: Exclude<ProjectCategory, "All">;
 }
 
 export interface Skill {
