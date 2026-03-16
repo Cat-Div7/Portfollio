@@ -39,14 +39,14 @@ const iconMap: Record<string, React.ElementType> = {
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-24 px-6">
-      <div className="max-w-6xl mx-auto">
+    <section id="skills" className="px-6 py-24">
+      <div className="mx-auto max-w-6xl">
         <motion.h2
           variants={fadeInUp}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="text-3xl font-bold mb-16 text-center"
+          className="mb-16 text-center text-3xl font-bold"
         >
           Tech <span className="text-gradient">Stack</span>
         </motion.h2>
@@ -60,7 +60,7 @@ export default function Skills() {
               whileInView="visible"
               viewport={{ once: true }}
             >
-              <h3 className="text-lg font-semibold text-muted-foreground mb-4 font-mono">
+              <h3 className="text-muted-foreground mb-4 font-mono text-lg font-semibold">
                 // {category.title}
               </h3>
               <div className="flex flex-wrap gap-3">
@@ -72,9 +72,8 @@ export default function Skills() {
                       variants={staggerItem}
                       whileHover={{
                         scale: 1.08,
-                        backgroundColor: "hsl(213 30% 22%)",
                       }}
-                      className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-border bg-card text-sm font-medium cursor-default transition-colors"
+                      className="border-border bg-card hover:bg-muted inline-flex cursor-default items-center gap-2 rounded-lg border px-4 py-2 text-sm font-medium transition-colors"
                     >
                       {Icon && <Icon size={16} className="text-primary" />}
                       {skill.name}
