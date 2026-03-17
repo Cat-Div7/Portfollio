@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { fadeInUp, staggerContainer, staggerItem } from "@/lib/animations";
 import { socialLinks } from "@/data";
-import { Copy, Check, Github, Linkedin } from "lucide-react";
+import { Copy, Check, Github, Linkedin, Send, Instagram } from "lucide-react";
 
 export default function Contact() {
   const [copied, setCopied] = useState(false);
@@ -14,10 +14,10 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 px-6 relative overflow-hidden">
+    <section id="contact" className="relative overflow-hidden px-6 py-24">
       {/* Radial glow */}
       <div
-        className="absolute inset-0 pointer-events-none"
+        className="pointer-events-none absolute inset-0"
         style={{
           background:
             "radial-gradient(ellipse at center, hsl(199 89% 60% / 0.06) 0%, transparent 70%)",
@@ -29,11 +29,11 @@ export default function Contact() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="max-w-2xl mx-auto text-center relative z-10"
+        className="relative z-10 mx-auto max-w-2xl text-center"
       >
         <motion.h2
           variants={fadeInUp}
-          className="text-3xl sm:text-4xl font-bold mb-4"
+          className="mb-4 text-3xl font-bold sm:text-4xl"
         >
           Let's Build <span className="text-gradient">Something</span>
         </motion.h2>
@@ -50,7 +50,7 @@ export default function Contact() {
             boxShadow: "0 0 30px hsl(199 89% 60% / 0.3)",
           }}
           whileTap={{ scale: 0.97 }}
-          className="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-card border border-border text-foreground font-mono text-sm hover:border-primary/50 transition-colors mx-auto cursor-pointer"
+          className="bg-card border-border text-foreground hover:border-primary/50 mx-auto inline-flex cursor-pointer items-center gap-3 rounded-xl border px-8 py-4 font-mono text-sm transition-colors"
         >
           {socialLinks.email}
           <motion.span
@@ -65,26 +65,51 @@ export default function Contact() {
 
         <motion.div
           variants={staggerItem}
-          className="flex justify-center gap-4 mt-8"
+          className="mt-8 flex justify-center gap-4"
         >
+          <motion.a
+            href={socialLinks.telegram}
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.15 }}
+            whileTap={{ scale: 0.9 }}
+            className="border-border text-muted-foreground hover:text-primary hover:border-primary/40 cursor-pointer rounded-lg border p-3 transition-colors"
+            aria-label="Telegram"
+          >
+            <Send size={20} />
+          </motion.a>
+
+          <motion.a
+            href={socialLinks.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.15 }}
+            whileTap={{ scale: 0.9 }}
+            className="border-border text-muted-foreground hover:text-primary hover:border-primary/40 cursor-pointer rounded-lg border p-3 transition-colors"
+            aria-label="Instagram"
+          >
+            <Instagram size={20} />
+          </motion.a>
+
           <motion.a
             href={socialLinks.github}
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.15 }}
             whileTap={{ scale: 0.9 }}
-            className="p-3 rounded-lg border border-border text-muted-foreground hover:text-primary hover:border-primary/40 transition-colors cursor-pointer"
+            className="border-border text-muted-foreground hover:text-primary hover:border-primary/40 cursor-pointer rounded-lg border p-3 transition-colors"
             aria-label="GitHub"
           >
             <Github size={20} />
           </motion.a>
+          
           <motion.a
             href={socialLinks.linkedin}
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.15 }}
             whileTap={{ scale: 0.9 }}
-            className="p-3 rounded-lg border border-border text-muted-foreground hover:text-primary hover:border-primary/40 transition-colors cursor-pointer"
+            className="border-border text-muted-foreground hover:text-primary hover:border-primary/40 cursor-pointer rounded-lg border p-3 transition-colors"
             aria-label="LinkedIn"
           >
             <Linkedin size={20} />

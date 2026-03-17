@@ -103,6 +103,8 @@ export const projects: Project[] = [
 export const socialLinks = {
   github: "https://github.com/Cat-Div7",
   linkedin: "https://www.linkedin.com/in/omar-ashraf-132193356",
+  telegram: "https://t.me/SBFAVTAR",
+  instagram: "https://www.instagram.com/o.mar.dev",
   email: "omarashraf11234@gmail.com",
 };
 
