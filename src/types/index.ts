@@ -8,7 +8,7 @@ export interface Project {
   githubUrl: string;
   liveUrl?: string;
   image?: string;
-  category: Exclude<ProjectCategory, "All">;
+  category: Exclude<ProjectCategory, "All">[];
 }
 
 export interface Skill {

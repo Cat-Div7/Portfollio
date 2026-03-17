@@ -14,7 +14,9 @@ export default function Projects() {
   const [active, setActive] = useState<ProjectCategory>("All");
 
   const filtered =
-    active === "All" ? projects : projects.filter((p) => p.category === active);
+    active === "All"
+      ? projects
+      : projects.filter((p) => p.category.includes(active));
 
   return (
     <section id="projects" className="px-6 py-24">
@@ -102,9 +104,16 @@ export default function Projects() {
                 <div className="space-y-4 p-5">
                   <div className="flex items-start justify-between gap-2">
                     <h3 className="text-lg font-semibold">{project.title}</h3>
-                    <span className="border-border text-muted-foreground shrink-0 rounded-full border px-2 py-0.5 font-mono text-[10px]">
-                      {project.category}
-                    </span>
+                    <div className="flex flex-wrap gap-1">
+                      {project.category.map((cat) => (
+                        <span
+                          key={cat}
+                          className="border-border text-muted-foreground rounded-full border px-2 py-0.5 font-mono text-[10px]"
+                        >
+                          {cat}
+                        </span>
+                      ))}
+                    </div>
                   </div>
 
                   <p className="text-muted-foreground text-sm leading-relaxed">

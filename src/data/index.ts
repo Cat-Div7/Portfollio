@@ -1,4 +1,10 @@
-import type { Project, NavLink, SkillCategory, Stat, ProjectCategory } from "../types/index";
+import type {
+  Project,
+  NavLink,
+  SkillCategory,
+  Stat,
+  ProjectCategory,
+} from "../types/index";
 
 export const navItems: NavLink[] = [
   { label: "Home", href: "#home" },
@@ -66,28 +72,31 @@ export const projects: Project[] = [
   {
     id: 1,
     title: "muscle-config",
-    description: "CLI tool that scaffolds React projects with configurable styling and architecture options.",
+    description:
+      "CLI tool that scaffolds React projects with configurable styling and architecture options.",
     techStack: ["TypeScript", "Node.js", "CLI"],
     githubUrl: "https://github.com/Cat-Div7/muscle-config",
-    category: "CLI",
+    category: ["CLI"],
   },
   {
     id: 2,
     title: "Portfolio",
-    description: "This site — built from scratch with React, TypeScript and Framer Motion.",
+    description:
+      "This site — built from scratch with React, TypeScript and Framer Motion.",
     techStack: ["React", "TypeScript", "Framer Motion", "Tailwind"],
     githubUrl: "https://github.com/Cat-Div7",
     liveUrl: "#",
-    category: "Frontend",
+    category: ["Frontend"],
   },
   {
     id: 3,
     title: "Admin Dashboard",
-    description: "A responsive admin dashboard with data visualization, dark mode and modern UI components.",
+    description:
+      "A responsive admin dashboard with data visualization, dark mode and modern UI components.",
     techStack: ["React", "JavaScript", "Pure CSS"],
     githubUrl: "https://github.com/Cat-Div7/Admin-Dashboard",
     liveUrl: "https://admin-dashboard-zeta-taupe.vercel.app/",
-    category: "Dashboard",
+    category: ["Frontend", "Dashboard"],
   },
 ];
 
