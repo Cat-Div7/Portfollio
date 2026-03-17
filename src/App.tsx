@@ -1,4 +1,5 @@
 import About from "./components/About";
+import Contact from "./components/Contact";
 import CustomCursor from "./components/CustomCursor";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
@@ -18,6 +19,7 @@ function App() {
         <About />
         <Skills />
         <Projects />
+        <Contact />
       </main>
       <ScrollToTop />
     </>
